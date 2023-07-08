@@ -1,0 +1,90 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-success">
+                <h4 class="card-title ">Mpesa</h4>
+            </div>
+            <div class="card-body">
+
+                <div class="card">
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card-header card-header-warning">
+                                        <h4 *ngIf="balanceLoaded" class="card-title"> {{mpesaBalance}}
+                                            <small></small>
+                                        </h4>
+
+                                        <div class="d-flex justify-content-center spinner-container" *ngIf="!balanceLoaded">
+                                            <mat-progress-bar
+                                                    color="green"
+                                                    mode="query"
+                                                    value=50
+                                                    bufferValue=75>
+                                            </mat-progress-bar>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons text-danger">attach_money</i>
+                                            <a href="#pablo">Account Balance</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card-header card-header-success">
+                                        <h4 class="card-title">{{totalDisbursement}}</h4>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons">attach_money</i> Total Disbursement
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card-header card-header-success">
+                                        <h4 class="card-title">{{transactionCount}}</h4>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons text-success">business</i> Transaction Count
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card-header card-header-info">
+                                        <h4 class="card-title">{{customerCount}}</h4>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="stats">
+                                            <i class="material-icons">people</i> Customer Count
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                </div>
+
+                <nav mat-tab-nav-bar>
+
+                    <a mat-tab-link routerLinkActive #general="routerLinkActive" [active]="general.isActive" [routerLinkActiveOptions]="{exact: true}"
+                       routerLink="/mpesa">
+                        <span class="nav-text"> Pending Disbursement </span></a>
+
+                    <a mat-tab-link routerLinkActive #completed_disbursements="routerLinkActive" [active]="completed_disbursements.isActive" [routerLink]="['transactions']">
+                        <span class="nav-text"> Completed Disbursement </span></a>
+
+                    <a mat-tab-link routerLinkActive #member_deposits="routerLinkActive" [active]="member_deposits.isActive" [routerLink]="['member_deposits']">
+                        <span class="nav-text">  Member Deposits  </span></a>
+                </nav>
+
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<footer class="footer ">
+    <div class="container-fluid">
+        <nav class="pull-left">
+        </nav>
+        <div class="copyright center-block">
+            &copy;
+            {{today | date: 'yyyy'}}  {{(currentSettings$|async)?.business_name}}
+            <hr/>
+            <span class="small-font">
+                <i>Help and tech support: robisignals@gmail.com</i>
+            </span>
+        </div>
+    </div>
+</footer>

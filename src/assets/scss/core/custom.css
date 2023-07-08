@@ -1,0 +1,38 @@
+.login-container {
+    width: 40%;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.setup-container {
+    width: 40%;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+.spinner {
+    position:absolute;
+    top:25%;
+    left:40%;
+    margin:0 auto;
+    display: inline-block;
+}
+.highlight{
+    background: #5C6BC0; /* green */
+}
+.pointer {
+    cursor: pointer;
+}
+.file-input{
+    display: none;
+}
+.member-photo{
+    width: 120px;
+    height: 120px;
+}

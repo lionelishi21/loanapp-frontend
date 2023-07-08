@@ -1,0 +1,128 @@
+<h5 mat-dialog-title>Edit Borrower</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="update()">
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Member" formControlName="member_id">
+                    <mat-option *ngFor="let member of members" [value]="member.id">
+                        {{member.first_name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.member_id" class="form__error">{{ formErrors.member_id }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="credit_score" placeholder="Credit Score">
+                <mat-error align="start" *ngIf="formErrors?.credit_score" class="form__error">{{ formErrors.credit_score }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Borrower Status" formControlName="borrower_status_id">
+                    <mat-option *ngFor="let status of borrower_statuses" [value]="status.id">
+                        {{status.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.borrower_status_id" class="form__error">{{ formErrors.borrower_status_id }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Witness Type" formControlName="witness_type_id">
+                    <mat-option *ngFor="let type of witness_types" [value]="type.id">
+                        {{type.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.witness_type_id" class="form__error">{{ formErrors.witness_type_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_first_name" placeholder="Witness First Name">
+                <mat-error align="start" *ngIf="formErrors?.witness_first_name" class="form__error">{{ formErrors.witness_first_name }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_last_name" placeholder="Witness Last Name">
+                <mat-error align="start" *ngIf="formErrors?.witness_last_name" class="form__error">{{ formErrors.witness_last_name }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_phone" placeholder="Witness Phone">
+                <mat-error align="start" *ngIf="formErrors?.witness_phone" class="form__error">{{ formErrors.witness_phone }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_email" placeholder="Witness Email">
+                <mat-error align="start" *ngIf="formErrors?.witness_email" class="form__error">{{ formErrors.witness_email }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_country" placeholder="Witness Country">
+                <mat-error align="start" *ngIf="formErrors?.witness_country" class="form__error">{{ formErrors.witness_country }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_national_id" placeholder="Witness National ID">
+                <mat-error align="start" *ngIf="formErrors?.witness_national_id" class="form__error">{{ formErrors.witness_national_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_city" placeholder="Witness City">
+                <mat-error align="start" *ngIf="formErrors?.witness_city" class="form__error">{{ formErrors.witness_city }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="witness_postal_address" placeholder="Witness Postal Address">
+                <mat-error align="start" *ngIf="formErrors?.witness_postal_address" class="form__error">{{ formErrors.witness_postal_address }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <mat-form-field class="full-width">
+        <input matInput formControlName="witness_residential_address" placeholder="Witness Residential Address">
+        <mat-error align="start" *ngIf="formErrors?.witness_residential_address" class="form__error">{{ formErrors.witness_residential_address }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width"  color="accent">
+        <textarea  formControlName="notes" matInput #notes placeholder="Note" maxlength="150" rows="3"></textarea>
+        <mat-hint align="end">{{notes.value.length}} / 150</mat-hint>
+        <mat-error align="start" *ngIf="formErrors?.notes" class="form__error">{{ formErrors.notes }}</mat-error>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="update()" [disabled]="!form.valid">Update</button>
+</mat-dialog-actions>

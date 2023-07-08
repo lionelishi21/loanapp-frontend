@@ -1,0 +1,30 @@
+<h5 mat-dialog-title>Edit Interest Type</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="updateSource()">
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="start_on" placeholder="Start On">
+                <mat-error align="start" *ngIf="formErrors?.start_on" class="form__error">{{ formErrors.start_on }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="end_on" placeholder="End On">
+                <mat-error align="start" *ngIf="formErrors?.end_on" class="form__error">{{ formErrors.end_on }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center" *ngIf="!loader">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+
+    <button class="mat-raised-button mat-primary" (click)="updateSource()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>

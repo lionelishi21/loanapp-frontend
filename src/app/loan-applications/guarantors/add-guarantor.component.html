@@ -1,0 +1,47 @@
+<h5 mat-dialog-title>Add Guarantor</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="create()">
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Member ID" formControlName="member_id">
+                    <mat-option *ngFor="let member of members" [value]="member.id">
+                        {{member.first_name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.member_id" class="form__error">{{ formErrors.member_id }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="national_id" placeholder="National ID">
+                <mat-error align="start" *ngIf="formErrors?.national_id" class="form__error">{{ formErrors.national_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="assign_date" placeholder="Assign Date">
+                <mat-error align="start" *ngIf="formErrors?.assign_date" class="form__error">{{ formErrors.assign_date }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="guarantee_amount" placeholder="Guarantee Amount">
+                <mat-error align="start" *ngIf="formErrors?.guarantee_amount" class="form__error">{{ formErrors.guarantee_amount }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="create()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>

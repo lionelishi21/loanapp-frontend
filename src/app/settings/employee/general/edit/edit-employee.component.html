@@ -1,0 +1,179 @@
+<h5 mat-dialog-title>Edit Employee</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="updateBranch()">
+
+    <mat-form-field class="full-width">
+        <input matInput formControlName="employee_number" placeholder="Staff Number">
+        <mat-error align="start" *ngIf="formErrors?.employee_number" class="form__error">{{ formErrors.employee_number }}</mat-error>
+    </mat-form-field>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="first_name" placeholder="First Name">
+                <mat-error align="start" *ngIf="formErrors?.first_name" class="form__error">{{ formErrors.first_name }}</mat-error>
+            </mat-form-field>
+
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="last_name" placeholder="Last Name">
+                <mat-error align="start" *ngIf="formErrors?.last_name" class="form__error">{{ formErrors.last_name }}</mat-error>
+            </mat-form-field>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="gender" placeholder="Gender">
+                <mat-error align="start" *ngIf="formErrors?.gender" class="form__error">{{ formErrors.gender }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="salutation" placeholder="Salutation">
+                <mat-error align="start" *ngIf="formErrors?.salutation" class="form__error">{{ formErrors.salutation }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="birth_day" placeholder="Birth Day">
+                <mat-error align="start" *ngIf="formErrors?.birth_day" class="form__error">{{ formErrors.birth_day }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="telephone_number" placeholder="Telephone Number">
+                <mat-error align="start" *ngIf="formErrors?.telephone_number" class="form__error">{{ formErrors.telephone_number }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="address" placeholder="Address">
+                <mat-error align="start" *ngIf="formErrors?.address" class="form__error">{{ formErrors.address }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="postal_code" placeholder="Postal Code">
+                <mat-error align="start" *ngIf="formErrors?.postal_code" class="form__error">{{ formErrors.postal_code }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="national_id_number" placeholder="National ID Number">
+                <mat-error align="start" *ngIf="formErrors?.national_id_number" class="form__error">{{ formErrors.national_id_number }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="passport_number" placeholder="Passport Number">
+                <mat-error align="start" *ngIf="formErrors?.passport_number" class="form__error">{{ formErrors.passport_number }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="email" placeholder="Email">
+                <mat-error align="start" *ngIf="formErrors?.email" class="form__error">{{ formErrors.email }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="country" placeholder="Country">
+                <mat-error align="start" *ngIf="formErrors?.country" class="form__error">{{ formErrors.country }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="county" placeholder="County">
+                <mat-error align="start" *ngIf="formErrors?.county" class="form__error">{{ formErrors.county }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="city" placeholder="City">
+                <mat-error align="start" *ngIf="formErrors?.city" class="form__error">{{ formErrors.city }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="nhif_number" placeholder="NHIF Number">
+                <mat-error align="start" *ngIf="formErrors?.nhif_number" class="form__error">{{ formErrors.nhif_number }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="nssf_number" placeholder="NSSF Number">
+                <mat-error align="start" *ngIf="formErrors?.nssf_number" class="form__error">{{ formErrors.nssf_number }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="kra_pin" placeholder="KRA Pin">
+                <mat-error align="start" *ngIf="formErrors?.kra_pin" class="form__error">{{ formErrors.kra_pin }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="job_group" placeholder="Job Group">
+                <mat-error align="start" *ngIf="formErrors?.job_group" class="form__error">{{ formErrors.job_group }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="designation_id" placeholder="Designation ID">
+                <mat-error align="start" *ngIf="formErrors?.designation_id" class="form__error">{{ formErrors.designation_id }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="department_id" placeholder="Department ID">
+                <mat-error align="start" *ngIf="formErrors?.department_id" class="form__error">{{ formErrors.department_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <mat-form-field class="full-width">
+        <input matInput formControlName="first_name" placeholder="Profile Picture">
+        <mat-error align="start" *ngIf="formErrors?.profile_picture" class="form__error">{{ formErrors.profile_picture }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <input matInput formControlName="national_id_image" placeholder="National ID Image">
+        <mat-error align="start" *ngIf="formErrors?.national_id_image" class="form__error">{{ formErrors.national_id_image }}</mat-error>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center" *ngIf="!loader">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+
+    <button class="mat-raised-button mat-primary" (click)="updateBranch()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>

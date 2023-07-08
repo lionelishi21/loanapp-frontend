@@ -1,0 +1,68 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Loan Application Details</h4>
+                        <p class="card-category"></p>
+                    </div>
+
+                    <div class="card-body">
+
+                        <nav mat-tab-nav-bar>
+
+                            <a mat-tab-link routerLinkActive #general="routerLinkActive" [active]="general.isActive" [routerLinkActiveOptions]="{exact: true}"
+                               routerLink="/loan-applications/{{id}}">
+                                <span class="nav-text">  info </span></a>
+
+                            <a mat-tab-link routerLinkActive #guarantor="routerLinkActive" [active]="guarantor.isActive" [routerLink]="['guarantors']">
+                                <span class="nav-text">   Guarantors </span></a>
+
+                            <a mat-tab-link routerLinkActive #asset="routerLinkActive" [active]="asset.isActive" [routerLink]="['collateral']">
+                                <span class="nav-text"> Collateral </span></a>
+
+                            <ng-container *appHasPermission=permissions>
+                                <a mat-tab-link routerLinkActive #manage="routerLinkActive" [active]="manage.isActive" [routerLink]="['management']">
+                                    <span class="nav-text">  Review </span></a>
+                            </ng-container>
+
+                        </nav>
+                        <router-outlet></router-outlet>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Summary</h4>
+                        <p class="card-category"></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category text-gray">Loan Type: {{loanApplicationData?.loanType?.name}}</div>
+                        <div class="card-category text-gray">Amount Applied: {{loanApplicationData?.amount_applied_display}}</div>
+                        <div class="card-category text-gray">Repayment Period: {{loanApplicationData?.repayment_period}}</div>
+                        <div class="card-category text-gray">Frequency: {{loanApplicationData?.paymentFrequency?.display_name}}</div>
+                        <div class="card-category text-gray">Interest Rate: {{loanApplicationData?.interest_rate}}</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Member</h4>
+                        <p class="card-category"></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-category text-gray">Name: {{loanApplicationData?.member?.first_name}}</div>
+                        <div class="card-category text-gray">Phone: {{loanApplicationData?.member?.phone}}</div>
+                        <div class="card-category text-gray">Email: {{loanApplicationData?.member?.email}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

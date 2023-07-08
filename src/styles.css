@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+.search-form-section {
+}
+
+.search-form-section button {
+    margin-top:10px;
+}
+
+.main-panel .main-content {
+    /* margin-top: 30px;
+     padding: 20px 15px;*/
+}
+
+/*.mat-dialog-container {
+    min-width: 450px;
+    min-height: 400px;
+}*/
+
+.mat-dialog-data {
+    min-width: 450px;
+}
+
+.spinner-container{
+    /*   position: fixed;
+       z-index: 999;
+       height: 2em;
+       width: 2em;
+   // overflow: show;
+       margin: auto;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;*/
+
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 20em;
+    margin: auto;
+    top: 0;
+    left: 20%;
+    bottom: 0;
+    right: 0;
+}
+
+.main-panel .main-content {
+    margin-top: 70px;
+    padding: 0 15px;
+    min-height: calc(100vh - 123px);
+}

@@ -1,0 +1,59 @@
+<div class="row search-form-section">
+    <div class="col-12">
+        <mat-form-field class="search-form-field">
+            <input matInput #search placeholder="Filter" autocomplete="off" [disabled]="meta?.total===0">
+            <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="search.value" (click)="clearSearch()">
+                <mat-icon>close</mat-icon></button>
+        </mat-form-field>
+    </div>
+</div>
+<div class="table-responsive">
+
+    <mat-table #table [dataSource]="guarantorDataSource" matSort matSortActive="created_at" matSortDirection="desc" matSortDisableClear>
+
+        <ng-container matColumnDef="member_id">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Member Name </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.member?.first_name}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="id_number">
+            <mat-header-cell *matHeaderCellDef> Member ID </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.member?.id_number}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef> Actions  </mat-header-cell>
+            <mat-cell *matCellDef="let row" class="button-row">
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="editDialog(row)">
+                        <mat-icon color="accent">edit</mat-icon>
+                        <span>Edit</span>
+                    </button>
+                    <button mat-menu-item (click)="openConfirmationDialog(row)">
+                        <mat-icon color="warn">delete</mat-icon>
+                        <span>Delete</span>
+                    </button>
+                </mat-menu>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="guarantorColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: guarantorColumns;"> </mat-row>
+
+    </mat-table>
+    <span *ngIf="meta?.total===0">No guarantor data.</span>
+
+    <div class="d-flex justify-content-center spinner-container" *ngIf="(guarantorDataSource?.loading$ | async) || loader">
+        <mat-spinner [diameter]="40"></mat-spinner>
+    </div>
+
+    <mat-paginator #pagination
+                   [length]="meta?.total"
+                   [pageIndex]="pageIndex"
+                   [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>
+    </mat-paginator>
+
+</div>

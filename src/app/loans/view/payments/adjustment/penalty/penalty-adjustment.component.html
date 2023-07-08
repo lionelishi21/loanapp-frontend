@@ -1,0 +1,91 @@
+<h5 mat-dialog-title>Penalty Adjustment. # {{penalty?.loan?.loan_reference_number}}</h5>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="penaltyWaiver()">
+
+    <div class="row">
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput type="number" min="0" placeholder="Amount" disabled value="{{penalty?.amount|number:'1.2'}}">
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Cleared Amount" disabled value="{{penalty?.paid_amount}}">
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Balance" disabled value="{{penalty?.balance}}">
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Due Date" disabled value="{{penalty?.due_date}}">
+            </mat-form-field>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field>
+                <input matInput type="number" min="0" formControlName="waiver_amount" placeholder="Waiver Amount">
+                <mat-error align="start" *ngIf="formErrors?.waiver_amount" class="form__error">{{ formErrors.waiver_amount }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <button class="mat-raised-button mat-primary" (click)="penaltyWaiver()" [disabled]="!form.valid">Update</button>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+
+        <mat-table #table [dataSource]="transactionDataSource" matSort matSortActive="transaction_date" matSortDirection="desc" matSortDisableClear>
+
+            <ng-container matColumnDef="transaction_date">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Date </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.transaction_date}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="amount">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Amount </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.amount|number:'1.2'}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="payment_method">
+                <mat-header-cell *matHeaderCellDef> Method </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.payment?.paymentMethod?.display_name}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="receipt_number">
+                <mat-header-cell *matHeaderCellDef> Receipt #. </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.payment?.receipt_number}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="loan_id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Transaction Type </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.transaction_type}} </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="transactionColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: transactionColumns;"> </mat-row>
+
+        </mat-table>
+        <span *ngIf="meta?.total===0">No payment data.</span>
+
+        <div class="d-flex justify-content-center spinner-container" *ngIf="(transactionDataSource?.loading$ | async) || loader">
+            <mat-spinner [diameter]="40"></mat-spinner>
+        </div>
+
+        <mat-paginator #pagination
+                       [length]="meta?.total"
+                       [pageIndex]="pageIndex"
+                       [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>
+        </mat-paginator>
+
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true">Close</button>
+</mat-dialog-actions>

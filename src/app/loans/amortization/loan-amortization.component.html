@@ -1,0 +1,79 @@
+<div class="d-flex justify-content-center spinner-container" *ngIf="loader">
+    Amortization ...
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<div class="card-header text-align-center small-font" *ngIf="!loader">
+    <div>
+        <span> Loan Amortization Schedule </span>
+    </div>
+    <div class="row col-12">
+        <div class="col-6">
+            <div class="row">Member: {{loan.member?.first_name}} {{ loan.member?.middle_name }} {{ loan.member?.last_name}}</div>
+            <div class="row">A/C Number: {{loan.member?.account?.account_number}}</div>
+        </div>
+        <div class="col-6">
+            <div class="row"> Loan Type: {{loan.loanType?.name}} </div>
+            <div class="row"> Loan Amount {{loan.amount_approved|number:'1.2'}} </div>
+        </div>
+    </div>
+</div>
+
+<mat-dialog-content class="mat-dialog-data">
+
+    <div *ngIf="!loader" class="table-responsive">
+      <mat-table #table [dataSource]="dataSource">
+
+        <!-- Count Column -->
+        <ng-container matColumnDef="count">
+            <mat-header-cell *matHeaderCellDef> Period </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.count}} </mat-cell>
+        </ng-container>
+
+          <!-- Due Date Column -->
+          <ng-container matColumnDef="due_date">
+              <mat-header-cell *matHeaderCellDef> Due Date </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{row.due_date}} </mat-cell>
+          </ng-container>
+
+        <!-- Payment Column -->
+        <ng-container matColumnDef="payment">
+            <mat-header-cell *matHeaderCellDef> Payment </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.payment}} </mat-cell>
+        </ng-container>
+
+        <!-- Interest Column -->
+        <ng-container matColumnDef="interest">
+            <mat-header-cell *matHeaderCellDef> Interest </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.interest}} </mat-cell>
+        </ng-container>
+
+        <!-- Principal Column -->
+        <ng-container matColumnDef="principal">
+            <mat-header-cell *matHeaderCellDef> Principal </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.principal}} </mat-cell>
+        </ng-container>
+
+        <!-- Balance Column -->
+        <ng-container matColumnDef="balance">
+            <mat-header-cell *matHeaderCellDef> Balance </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.balance}} </mat-cell>
+        </ng-container>
+
+          <mat-header-row *matHeaderRowDef="tableColumns; sticky: true"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: tableColumns;"> </mat-row>
+
+      </mat-table>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true">Close</button>
+    <ng-container *ngIf="!loader" align="right">
+        <button *ngIf="dataSource?.length > 0" mat-raised-button matTooltip="Download Amortization Statement." [matTooltipPosition]="'above'" (click)="downloadPdf()">
+            <mat-icon>picture_as_pdf</mat-icon>
+            Download
+        </button>
+    </ng-container>
+</mat-dialog-actions>

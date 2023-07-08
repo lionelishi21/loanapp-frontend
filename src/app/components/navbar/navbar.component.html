@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-wrapper">
+        </div>
+        <button mat-raised-button class="navbar-toggler" type="button" (click)="sidebarToggle()">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item" *ngIf="!loading">
+                    Welcome, {{activeUser}}.
+                </li>
+                <li class="nav-item pointer" (click)="logout()" *ngIf="!loading">
+                    <a class="nav-link">
+                        <i class="material-icons">power_settings_new</i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="loading">
+                    <span>clean up ...</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

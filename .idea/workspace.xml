@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fb92a318-cf6e-4426-8d0a-2b27a8b23c24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/config/api-version.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/css/demo-documentation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/css/material-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/arrive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/initMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/material-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/js/material.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/tutorial-components.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/accounting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/accounting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/accounting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/accounting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/accounting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/accounting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/accounting.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/accounting.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/data/accounting.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/data/accounting.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/data/accounting.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/data/accounting.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/data/finance-statement.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/data/finance-statement.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/finance/finance.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/finance/finance.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/finance/finance.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/finance/finance.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/journal/journal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/journal/journal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/journal/journal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/journal/journal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/ledger/ledger.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/ledger/ledger.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/ledger/ledger.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/ledger/ledger.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/models/accounting-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/models/accounting-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/other-reports/other-reports.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/other-reports/other-reports.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/other-reports/other-reports.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/other-reports/other-reports.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/statement/statement.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/statement/statement.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/statement/statement.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/statement/statement.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/accounting/statement/statement.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/accounting/statement/statement.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/404/error-404.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/404/error-404.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/500/error-500.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/500/error-500.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/auth.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/auth.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/auth.effects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/auth.effects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/authentication-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/authentication-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/authentication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/authentication.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/authentication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/confirm-email/confirm-email.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/confirm-email/confirm-email.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/error.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/error.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/forgot-password/forgot-password.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/forgot-password/forgot-password.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/forgot-password/forgot-password.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/forgot-password/forgot-password.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/jwt.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/jwt.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/model/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/model/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/permission-guard-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/permission-guard-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/borrowers/add/add-borrower.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/borrowers/add/add-borrower.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/borrowers/add/add-borrower.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/borrowers/add/add-borrower.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/borrowers/borrower.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/borrowers/borrower.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/borrowers/data/borrower.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/borrowers/data/borrower.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/borrowers/edit/edit-borrower.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/borrowers/edit/edit-borrower.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/borrowers/edit/edit-borrower.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/borrowers/edit/edit-borrower.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collateral/data/collateral.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collateral/data/collateral.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/data/dashboard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/data/dashboard.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/dashboard/model/dashboard.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/dashboard/model/dashboard.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/add/add-expense.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/add/add-expense.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/add/add-expense.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/add/add-expense.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/data/expense.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/data/expense.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/edit/edit-expense.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/edit/edit-expense.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/edit/edit-expense.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/edit/edit-expense.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/expense.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/expense.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/expenses/expense.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/expenses/expense.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/add/add-guarantor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/add/add-guarantor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/add/add-guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/add/add-guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/data/guarantor.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/data/guarantor.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/edit/edit-guarantor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/edit/edit-guarantor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/edit/edit-guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/edit/edit-guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/guarantor-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/guarantor-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/guarantors/guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/guarantors/guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/icons/icons.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/icons/icons.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/icons/icons.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/icons/icons.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/add/add-loan-application.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/add/add-loan-application.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/add/add-loan-application.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/add/add-loan-application.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/data/loan-application-resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/data/loan-application-resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/data/loan-application.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/data/loan-application.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/data/loan-application.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/data/loan-application.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/edit/edit-loan-application.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/edit/edit-loan-application.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/edit/edit-loan-application.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/edit/edit-loan-application.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/guarantors/add-guarantor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/guarantors/add-guarantor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/guarantors/add-guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/guarantors/add-guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/guarantors/data/guarantor.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/guarantors/data/guarantor.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/loan-application-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/loan-application-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/loan-application.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/loan-application.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/models/loan-application-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/models/loan-application-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/general/view-application-general.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/general/view-application-general.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/general/view-application-general.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/general/view-application-general.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/add/add-application-guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/add/add-application-guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/application-guarantor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/application-guarantor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/application-guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/application-guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/edit/edit-application-guarantor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/edit/edit-application-guarantor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/manage/application-manage.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/manage/application-manage.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/manage/application-manage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/manage/application-manage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/manage/application-manage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/manage/application-manage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/securitty/add/add-application-security.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/securitty/add/add-application-security.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/securitty/application-security.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/securitty/application-security.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/securitty/edit/edit-application-security.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/securitty/edit/edit-application-security.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/view-loan-application.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/view-loan-application.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loan-applications/view/view-loan-application.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loan-applications/view/view-loan-application.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/add/add-loan.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/add/add-loan.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/add/add-loan.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/add/add-loan.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/data/loan-resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/data/loan-resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/data/loan.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/data/loan.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/data/loan.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/data/loan.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/data/penalty/loan-penalty.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/data/penalty/loan-penalty.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/edit/edit-loan.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/edit/edit-loan.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/edit/edit-loan.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/edit/edit-loan.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/loan-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/loan-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/loan.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/loan.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/loan.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/loan.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/loan.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/loan.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/loan.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/loan.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/models/loan-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/models/loan-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/adjustment/view-loan-adjustment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/adjustment/view-loan-adjustment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/collateral/view-loan-collateral.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/collateral/view-loan-collateral.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/general/view-loan-general.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/general/view-loan-general.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/guarantors/view-loan-guarantors.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/guarantors/view-loan-guarantors.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/guarantors/view-loan-guarantors.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/guarantors/view-loan-guarantors.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/loan-applications/view-loan-loan-applications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/loan-applications/view-loan-loan-applications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/adjustment/penalty/penalty-adjustment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/adjustment/penalty/penalty-adjustment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/adjustment/penalty/penalty-adjustment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/adjustment/penalty/penalty-adjustment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/view-loan.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/view-loan.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loans/view/view-loan.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loans/view/view-loan.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/add/add-member.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/add/add-member.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/add/add-member.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/add/add-member.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/data/member-resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/data/member-resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/data/member.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/data/member.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/data/member.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/data/member.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/detail/member-detail.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/detail/member-detail.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/detail/member-payment.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/detail/member-payment.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/detail/memberxx-payment-component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/edit-member.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/edit/edit-member.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/edit/edit-member.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/edit/edit-member.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/member.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/member.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/member.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/member.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/member.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/member.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/member.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/member.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/models/member-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/models/member-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/collaterals/member-collateral.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/collaterals/member-collateral.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/collaterals/member-collateral.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/collaterals/member-collateral.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/general/view-member-general.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/general/view-member-general.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/general/view-member-general.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/general/view-member-general.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/general/view-member-general.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/general/view-member-general.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/guarantee/member-guarantee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/guarantee/member-guarantee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/guarantee/member-guarantee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/guarantee/member-guarantee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/loan-applications/member-loan-applications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/loan-applications/member-loan-applications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/loan-applications/member-loan-applications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/loan-applications/member-loan-applications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/loans/member-loans.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/loans/member-loans.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/payment/member-payment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/payment/member-payment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/view-member.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/view-member.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/view-member.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/view-member.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/members/view/view-member.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/members/view/view-member.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notifications/notifications.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notifications/notifications.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notifications/notifications.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/notifications/notifications.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/add/add-payment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/add/add-payment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/add/add-payment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/add/add-payment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/data/payment.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/data/payment.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/data/payment.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/data/payment.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/details/payment-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/details/payment-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/details/payment-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/details/payment-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/models/payment-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/models/payment-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/payment-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/payment-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/payment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/payment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/payments/payment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/payments/payment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/account-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/account-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/account-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/account-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/account-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/account-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/add/add-capital.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/add/add-capital.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/add/add-capital.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/add/add-capital.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/capital-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/capital-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/capital-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/capital-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/capital-setting.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/capital-setting.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/edit/edit-capital.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/edit/edit-capital.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/capital/edit/edit-capital.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/capital/edit/edit-capital.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/period/add/add-period.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/period/add/add-period.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/period/add/add-period.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/period/add/add-period.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/period/edit/edit-period.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/period/edit/edit-period.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/period/edit/edit-period.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/period/edit/edit-period.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/period/period-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/period/period-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/account/period/period-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/account/period/period-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/borrower-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/borrower-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/borrower-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/borrower-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/status/add/add-borrower-status.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/status/add/add-borrower-status.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/status/add/add-borrower-status.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/status/add/add-borrower-status.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/status/borrower-status-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/status/borrower-status-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/status/edit/edit-borrower-status.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/status/edit/edit-borrower-status.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/status/edit/edit-borrower-status.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/status/edit/edit-borrower-status.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/add/add-witness-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/add/add-witness-type.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/add/add-witness-type.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/add/add-witness-type.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/edit/edit-witness-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/edit/edit-witness-type.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/edit/edit-witness-type.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/edit/edit-witness-type.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/witness-type-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/witness-type-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/witness-type-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/borrower/witness-type/witness-type-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/branch-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/branch-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/branch-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/branch-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/general/add/add-branch.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/general/add/add-branch.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/general/add/add-branch.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/general/add/add-branch.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/general/branch-general-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/general/branch-general-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/general/branch-general-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/general/branch-general-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/general/edit/edit-branch.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/general/edit/edit-branch.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/branch/general/edit/edit-branch.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/branch/general/edit/edit-branch.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/communication-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/communication-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/communication-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/communication-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/communication-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/communication-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/email-template/email-template-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/email-template/email-template-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/email/email-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/email/email-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/email/email-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/email/email-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/email/model/email-setting.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/email/model/email-setting.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/general/communication-general-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/general/communication-general-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/general/communication-general-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/general/communication-general-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/general/edit/edit-communication-general.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/general/edit/edit-communication-general.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/general/edit/edit-communication-general.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/general/edit/edit-communication-general.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/sms-template/sms-template-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/sms-template/sms-template-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/sms/sms-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/sms/sms-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/communication/sms/sms-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/communication/sms/sms-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/employee-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/employee-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/employee-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/employee-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/general/add/add-employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/general/add/add-employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/general/add/add-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/general/add/add-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/general/edit/edit-employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/general/edit/edit-employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/general/edit/edit-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/general/edit/edit-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/employee/general/employee-general-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/employee/general/employee-general-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense_category/add/add-expense-category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense_category/add/add-expense-category.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense_category/add/add-expense-category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense_category/add/add-expense-category.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense_category/edit/edit-expense-category.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense_category/edit/edit-expense-category.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense_category/edit/edit-expense-category.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense_category/edit/edit-expense-category.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense_category/expense-category-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense_category/expense-category-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/expense/expense_category/expense-category-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/expense/expense_category/expense-category-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/general/data/general-setting.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/general/data/general-setting.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/general/general-setting.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/general/general-setting.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/general/general-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/general/general-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/general/general-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/general/general-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/general/model/general-setting.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/general/model/general-setting.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/interest-type/add/add-interest-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/interest-type/add/add-interest-type.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/interest-type/add/add-interest-type.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/interest-type/add/add-interest-type.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/interest-type/edit/edit-interest-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/interest-type/edit/edit-interest-type.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/interest-type/edit/edit-interest-type.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/interest-type/edit/edit-interest-type.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/interest-type/interest-type-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/interest-type/interest-type-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/loan-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/loan-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/loan-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/loan-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/add/add-payment-frequency.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/add/add-payment-frequency.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/add/add-payment-frequency.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/add/add-payment-frequency.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/edit/edit-payment-frequency.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/edit/edit-payment-frequency.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/edit/edit-payment-frequency.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/edit/edit-payment-frequency.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/interest-type-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/payment-frequency/payment-frequency-setting.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/source/add/add-loan-source.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/source/add/add-loan-source.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/source/add/add-loan-source.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/source/add/add-loan-source.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/source/edit/edit-loan-source.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/source/edit/edit-loan-source.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/source/edit/edit-loan-source.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/source/edit/edit-loan-source.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/source/loan-source-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/source/loan-source-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/source/loan-source-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/source/loan-source-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/status/add/add-loan-status.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/status/add/add-loan-status.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/status/add/add-loan-status.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/status/add/add-loan-status.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/status/edit/edit-loan-status.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/status/edit/edit-loan-status.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/status/edit/edit-loan-status.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/status/edit/edit-loan-status.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/status/loan-status-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/status/loan-status-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/type/add/add-loan-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/type/add/add-loan-type.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/type/add/add-loan-type.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/type/add/add-loan-type.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/type/edit/edit-loan-type.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/type/edit/edit-loan-type.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/type/edit/edit-loan-type.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/type/edit/edit-loan-type.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/type/loan-type-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/type/loan-type-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/loan/type/loan-type-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/loan/type/loan-type-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/general/payment-general-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/general/payment-general-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/general/payment-general-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/general/payment-general-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/method/add/add-payment-method.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/method/add/add-payment-method.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/method/add/add-payment-method.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/method/add/add-payment-method.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/method/edit/edit-payment-method.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/method/edit/edit-payment-method.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/method/edit/edit-payment-method.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/method/edit/edit-payment-method.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/method/payment-method-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/method/payment-method-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/payment-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/payment-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/payment-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/payment-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/payment-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/payment-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/status/add/add-payment-status.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/status/add/add-payment-status.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/status/add/add-payment-status.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/status/add/add-payment-status.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/status/edit/edit-payment-status.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/status/edit/edit-payment-status.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/status/edit/edit-payment-status.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/status/edit/edit-payment-status.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/payment/status/payment-status-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/payment/status/payment-status-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/setting.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/setting.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/data/user-setting.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/data/user-setting.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/general/add/add-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/general/add/add-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/general/add/add-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/general/add/add-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/general/edit/edit-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/general/edit/edit-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/general/edit/edit-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/general/edit/edit-user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/general/user-general-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/general/user-general-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/general/user-general-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/general/user-general-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/permissions/edit/edit-permission.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/permissions/edit/edit-permission.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/permissions/edit/edit-permission.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/permissions/edit/edit-permission.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/permissions/user-permissions-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/permissions/user-permissions-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/permissions/user-permissions-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/permissions/user-permissions-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/roles/add/add-role.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/roles/add/add-role.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/roles/add/add-role.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/roles/add/add-role.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/roles/edit/edit-role.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/roles/edit/edit-role.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/roles/edit/edit-role.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/roles/edit/edit-role.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/roles/user-roles-setting.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/roles/user-roles-setting.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/roles/user-roles-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/roles/user-roles-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/user-setting-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/user-setting-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/settings/user/user-setting.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/settings/user/user-setting.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/base-data-source.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/base-data-source.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/base-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/base-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/delete/confirmation-dialog-component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/delete/confirmation-dialog-component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/directives/has-permission-directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/directives/has-permission-directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/notification.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/notification.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/table-list/table-list.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/table-list/table-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/table-list/table-list.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/table-list/table-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/transactions/data/transaction.resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/transactions/data/transaction.resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/typography/typography.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/typography/typography.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/typography/typography.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/typography/typography.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/upgrade/upgrade.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/upgrade/upgrade.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/upgrade/upgrade.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/upgrade/upgrade.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user-profile/data/user-profile-resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/user-profile/data/user-profile-resolver.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user-profile/data/user-profile.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/user-profile/data/user-profile.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/user-profile/user-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user-profile/user-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/user-profile/user-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/config/api-url.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/core/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/core/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/core/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/core/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/dist/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Loan Ty</find>
+      <find>revi</find>
+      <find>router</find>
+      <find>returnUrl</find>
+      <find>witness</find>
+      <find>witnessTypes</find>
+      <find>disburseMethod</find>
+      <find>other_banking_details</find>
+      <find>witnessType</find>
+      <find>cubic-bezie</find>
+      <find>downloadReport</find>
+      <find>loan_type_name</find>
+      <find>IconsComponent</find>
+      <find>UpgradeComponent</find>
+      <find>NotificationsComponent</find>
+      <find>TypographyComponent</find>
+      <find>TableListComponent</find>
+      <find>xxxx</find>
+      <find>qqqqqq</find>
+      <find>image</find>
+      <find>MemberxxPaymentComponent</find>
+      <find>app-member-payments</find>
+      <find>detail</find>
+      <find>style</find>
+      <find>interestType</find>
+      <find>interest_type</find>
+      <find>amortizationStatement</find>
+      <find>loanApplication</find>
+      <find>styl</find>
+      <find>reportService</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>collateralDataSource</replace>
+      <replace>guarantorService</replace>
+      <replace>loanApplicationColumns</replace>
+      <replace>loanApplicationDataSource</replace>
+      <replace>loanApplicationService</replace>
+      <replace>loanColumns</replace>
+      <replace>loanDataSource</replace>
+      <replace>loanService</replace>
+      <replace>paymentColumns</replace>
+      <replace>paymentDataSource</replace>
+      <replace>guarantorColumns</replace>
+      <replace>guarantorDataSource</replace>
+      <replace>trialBalanceData</replace>
+      <replace>logoUrl</replace>
+      <replace>photoToUpload</replace>
+      <replace>photoUrl</replace>
+      <replace>showApplicationForm</replace>
+      <replace>membershipFormToUpload</replace>
+      <replace>membershipFormUrl</replace>
+      <replace>loader</replace>
+      <replace>load</replace>
+      <replace>loadProgress</replace>
+      <replace>withdrawalService</replace>
+      <replace>isMpesa</replace>
+      <replace>dataSourceJournal</replace>
+      <replace>dataSourceScheduledDisbursement</replace>
+      <replace>displayColumns</replace>
+      <replace>meta</replace>
+      <replace>disburse_note</replace>
+      <replace>smsTemplate</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/expenses/add/add-expense.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/expenses/edit/edit-expense.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/add/add-application-guarantor.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/view/guarantor/edit/edit-application-guarantor.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/view/view-loan-application.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/edit/edit-loan.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/add/add-loan.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/view-loan.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/guarantors/view-loan-guarantors.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/loan-applications/view-loan-loan-applications.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/general/view-loan-general.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/collateral/view-loan-collateral.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/adjustment/view-loan-adjustment.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/members/view/view-member.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/members/view/payment/member-payment.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/members/view/collaterals/member-collateral.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/mpesa/mpesa.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/mpesa/custom-send/custom-send.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/mpesa/member-deposits/member-deposit.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/mpesa/pending-disbursements/pending-disbursements.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/mpesa/transactions/transactions.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/withdrawals/withdrawal.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/loan/source/loan-source-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/payment/method/payment-method-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/payment/status/payment-status-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/payment/payment-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/user/user-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/user/permissions/edit/edit-permission.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/user/permissions/user-permissions-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/settings/user/roles/user-roles-setting.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/calculator/add-loan-application.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/loan-application.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.html" />
+        <option value="$PROJECT_DIR$/src/app/loans/data/loan.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/calculator/calculator.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/members/member.component.html" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/calculator/calculator.component.html" />
+        <option value="$PROJECT_DIR$/src/app/loan-applications/loan-application.component.html" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.html" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.html" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.html" />
+        <option value="$PROJECT_DIR$/src/assets/config/api-version.ts" />
+        <option value="$PROJECT_DIR$/src/app/withdrawals/add/add-withdrawal.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/payments/add/add-payment.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/base-service.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-100" />
+    <option name="y" value="150" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="E:\xampp\htdocs\19\dan\Files\material-dashboard-angular2-master\material-dashboard-angular2-master\node_modules\tslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="E:\xampp\htdocs\signalevanto\front\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\install" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\install\requirements" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\members\detail" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\settings\user\roles\edit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\loan-applications\calculator" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\auth\reset-password" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\install" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\mpesa\data" />
+      <recent name="E:\xampp\htdocs\19\dan\front\smart\src\app\mpesa\models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fb92a318-cf6e-4426-8d0a-2b27a8b23c24" name="Default Changelist" comment="" />
+      <created>1559553923692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559553923692</updated>
+      <workItem from="1559553926703" duration="6487000" />
+      <workItem from="1559619919369" duration="12899000" />
+      <workItem from="1559702965605" duration="285000" />
+      <workItem from="1559704794047" duration="605000" />
+      <workItem from="1559707126985" duration="27000" />
+      <workItem from="1559707206306" duration="2450000" />
+      <workItem from="1559710415392" duration="18156000" />
+      <workItem from="1559801646239" duration="2982000" />
+      <workItem from="1559982687575" duration="1752000" />
+      <workItem from="1560067802301" duration="16168000" />
+      <workItem from="1560232418881" duration="558000" />
+      <workItem from="1560252046186" duration="1295000" />
+      <workItem from="1560319241725" duration="7661000" />
+      <workItem from="1560354830676" duration="3626000" />
+      <workItem from="1560585128492" duration="616000" />
+      <workItem from="1560758322696" duration="4119000" />
+      <workItem from="1560837247403" duration="11703000" />
+      <workItem from="1560873904240" duration="8659000" />
+      <workItem from="1560926264214" duration="1868000" />
+      <workItem from="1560931783164" duration="7490000" />
+      <workItem from="1561014279798" duration="595000" />
+      <workItem from="1561025364476" duration="9000" />
+      <workItem from="1561360894952" duration="587000" />
+      <workItem from="1561364201074" duration="1907000" />
+      <workItem from="1561445017420" duration="9985000" />
+      <workItem from="1561535557870" duration="590000" />
+      <workItem from="1561537211107" duration="2342000" />
+      <workItem from="1561541134239" duration="790000" />
+      <workItem from="1561541992184" duration="324000" />
+      <workItem from="1561559272942" duration="679000" />
+      <workItem from="1561560224360" duration="22000" />
+      <workItem from="1561570832643" duration="10158000" />
+      <workItem from="1561617866721" duration="7458000" />
+      <workItem from="1561707086467" duration="1120000" />
+      <workItem from="1561963761963" duration="1183000" />
+      <workItem from="1562067455302" duration="3685000" />
+      <workItem from="1562120608766" duration="6564000" />
+      <workItem from="1562205714037" duration="20199000" />
+      <workItem from="1562292573310" duration="4303000" />
+      <workItem from="1562298376752" duration="16919000" />
+      <workItem from="1562377469927" duration="22542000" />
+      <workItem from="1562412140914" duration="2171000" />
+      <workItem from="1562494718930" duration="1433000" />
+      <workItem from="1562552007852" duration="18492000" />
+      <workItem from="1562638670596" duration="16840000" />
+      <workItem from="1562668385294" duration="5680000" />
+      <workItem from="1562694110544" duration="3540000" />
+      <workItem from="1562725143024" duration="11616000" />
+      <workItem from="1562811089370" duration="11144000" />
+      <workItem from="1563013137362" duration="572000" />
+      <workItem from="1563187830202" duration="351000" />
+      <workItem from="1563244041004" duration="16868000" />
+      <workItem from="1563329484478" duration="6319000" />
+      <workItem from="1563416211517" duration="6460000" />
+      <workItem from="1563448313062" duration="1704000" />
+      <workItem from="1563502485400" duration="20049000" />
+      <workItem from="1563608064893" duration="20120000" />
+      <workItem from="1563695595932" duration="18735000" />
+      <workItem from="1563757537006" duration="20440000" />
+      <workItem from="1563952403689" duration="13608000" />
+      <workItem from="1564036503250" duration="9820000" />
+      <workItem from="1564085039240" duration="803000" />
+      <workItem from="1564119478712" duration="10914000" />
+      <workItem from="1564160643279" duration="4926000" />
+      <workItem from="1564214217561" duration="7729000" />
+      <workItem from="1564301634858" duration="2469000" />
+      <workItem from="1564366215844" duration="7989000" />
+      <workItem from="1564454620375" duration="1373000" />
+      <workItem from="1564494512073" duration="630000" />
+      <workItem from="1564542803615" duration="3940000" />
+      <workItem from="1564575400759" duration="1847000" />
+      <workItem from="1564652522020" duration="1819000" />
+      <workItem from="1564669627651" duration="100000" />
+      <workItem from="1564673177592" duration="716000" />
+      <workItem from="1564727670574" duration="1365000" />
+      <workItem from="1564736230945" duration="15764000" />
+      <workItem from="1564775453795" duration="2932000" />
+      <workItem from="1564812736325" duration="10156000" />
+      <workItem from="1564831593237" duration="5403000" />
+      <workItem from="1564989822723" duration="2181000" />
+      <workItem from="1565001047468" duration="3605000" />
+      <workItem from="1565057862961" duration="7712000" />
+      <workItem from="1565154579196" duration="16109000" />
+      <workItem from="1565178828692" duration="1140000" />
+      <workItem from="1565246627666" duration="5824000" />
+      <workItem from="1565334102911" duration="4058000" />
+      <workItem from="1565506164420" duration="3966000" />
+      <workItem from="1565593225943" duration="7726000" />
+      <workItem from="1565676439950" duration="1195000" />
+      <workItem from="1565945730499" duration="718000" />
+      <workItem from="1566030147894" duration="12689000" />
+      <workItem from="1566115972721" duration="5212000" />
+      <workItem from="1566205388734" duration="10163000" />
+      <workItem from="1566235101804" duration="7295000" />
+      <workItem from="1566245536393" duration="4035000" />
+      <workItem from="1566374781717" duration="1772000" />
+      <workItem from="1567368795408" duration="10543000" />
+      <workItem from="1567409164358" duration="22709000" />
+      <workItem from="1567505027203" duration="6270000" />
+      <workItem from="1567583244092" duration="23600000" />
+      <workItem from="1567664778302" duration="10204000" />
+      <workItem from="1567759529337" duration="615000" />
+      <workItem from="1567846361124" duration="1615000" />
+      <workItem from="1567853649213" duration="9664000" />
+      <workItem from="1567907938955" duration="7111000" />
+      <workItem from="1567933918467" duration="7391000" />
+      <workItem from="1567956836851" duration="9582000" />
+      <workItem from="1568019203218" duration="1006000" />
+      <workItem from="1568030519365" duration="4684000" />
+      <workItem from="1568092984460" duration="9116000" />
+      <workItem from="1568132532108" duration="19139000" />
+      <workItem from="1568187571444" duration="18114000" />
+      <workItem from="1568273181494" duration="1137000" />
+      <workItem from="1568314366327" duration="17500000" />
+      <workItem from="1568362014681" duration="7413000" />
+      <workItem from="1568544264405" duration="796000" />
+      <workItem from="1568702597423" duration="717000" />
+      <workItem from="1568793972004" duration="1164000" />
+      <workItem from="1568988345738" duration="708000" />
+      <workItem from="1569143700483" duration="650000" />
+      <workItem from="1569262366410" duration="794000" />
+      <workItem from="1569308359181" duration="2301000" />
+      <workItem from="1569396037372" duration="6250000" />
+      <workItem from="1569430660253" duration="729000" />
+      <workItem from="1569488286783" duration="706000" />
+      <workItem from="1569508531937" duration="1263000" />
+      <workItem from="1569530127327" duration="4369000" />
+      <workItem from="1569574060114" duration="7564000" />
+      <workItem from="1569610997815" duration="8576000" />
+      <workItem from="1569660527153" duration="3106000" />
+      <workItem from="1569711035054" duration="7719000" />
+      <workItem from="1569752107825" duration="6719000" />
+      <workItem from="1569784461470" duration="9175000" />
+      <workItem from="1569866620091" duration="1795000" />
+      <workItem from="1569916117794" duration="6209000" />
+      <workItem from="1569972117946" duration="2936000" />
+      <workItem from="1570040686352" duration="6499000" />
+      <workItem from="1570075067582" duration="12889000" />
+      <workItem from="1570174367347" duration="3040000" />
+      <workItem from="1570286234420" duration="1073000" />
+      <workItem from="1570434876274" duration="3691000" />
+      <workItem from="1570464277192" duration="7874000" />
+      <workItem from="1570520986208" duration="11372000" />
+      <workItem from="1570608970167" duration="12896000" />
+      <workItem from="1570694722104" duration="3545000" />
+      <workItem from="1570723823138" duration="1508000" />
+      <workItem from="1570779183715" duration="17771000" />
+      <workItem from="1570826866404" duration="3109000" />
+      <workItem from="1570872888558" duration="2597000" />
+      <workItem from="1570900212446" duration="1541000" />
+      <workItem from="1570948393545" duration="6283000" />
+      <workItem from="1571044466554" duration="1185000" />
+      <workItem from="1571066163599" duration="10036000" />
+      <workItem from="1571123666475" duration="16361000" />
+      <workItem from="1571209660422" duration="4248000" />
+      <workItem from="1571230258037" duration="717000" />
+      <workItem from="1571253022353" duration="4384000" />
+      <workItem from="1571294957855" duration="18835000" />
+      <workItem from="1571334563371" duration="6557000" />
+      <workItem from="1571383377945" duration="9132000" />
+      <workItem from="1571416336333" duration="7976000" />
+      <workItem from="1571477723310" duration="5536000" />
+      <workItem from="1571494648036" duration="1040000" />
+      <workItem from="1571508489075" duration="3318000" />
+      <workItem from="1571527841129" duration="86000" />
+      <workItem from="1571564497850" duration="13859000" />
+      <workItem from="1571583201113" duration="2497000" />
+      <workItem from="1571598301289" duration="6871000" />
+      <workItem from="1571605425609" duration="632000" />
+      <workItem from="1571607578892" duration="1102000" />
+      <workItem from="1571663051793" duration="1685000" />
+      <workItem from="1571665632771" duration="1841000" />
+      <workItem from="1571846452173" duration="4872000" />
+      <workItem from="1571904843636" duration="15372000" />
+      <workItem from="1571986833062" duration="12842000" />
+      <workItem from="1572038057984" duration="576000" />
+      <workItem from="1572090716380" duration="6922000" />
+      <workItem from="1572128066510" duration="2858000" />
+      <workItem from="1572130974818" duration="25000" />
+      <workItem from="1572168646755" duration="10782000" />
+      <workItem from="1572210978211" duration="751000" />
+      <workItem from="1572281017937" duration="1181000" />
+      <workItem from="1572318133468" duration="7258000" />
+      <workItem from="1572381385627" duration="7097000" />
+      <workItem from="1572430292194" duration="7317000" />
+      <workItem from="1572511835376" duration="483000" />
+      <workItem from="1572695090752" duration="908000" />
+      <workItem from="1572894078362" duration="12488000" />
+      <workItem from="1572939721499" duration="22144000" />
+      <workItem from="1573032870739" duration="613000" />
+      <workItem from="1573112613386" duration="7043000" />
+      <workItem from="1573139845555" duration="9866000" />
+      <workItem from="1573162365898" duration="3522000" />
+      <workItem from="1573208750544" duration="360000" />
+      <workItem from="1573234277266" duration="4534000" />
+      <workItem from="1573290424628" duration="684000" />
+      <workItem from="1573386789660" duration="1793000" />
+      <workItem from="1573396097622" duration="7393000" />
+      <workItem from="1573551351294" duration="21993000" />
+      <workItem from="1573669707413" duration="14358000" />
+      <workItem from="1573717507350" duration="8699000" />
+      <workItem from="1573809819073" duration="7510000" />
+      <workItem from="1573893923551" duration="730000" />
+      <workItem from="1574002190196" duration="1218000" />
+      <workItem from="1574072506492" duration="6335000" />
+      <workItem from="1574099117003" duration="2119000" />
+      <workItem from="1574168209992" duration="1553000" />
+      <workItem from="1574179412663" duration="5274000" />
+      <workItem from="1574282053673" duration="2533000" />
+      <workItem from="1574501307762" duration="3474000" />
+      <workItem from="1574539342321" duration="758000" />
+      <workItem from="1574574928295" duration="25514000" />
+      <workItem from="1574833103376" duration="2249000" />
+      <workItem from="1575022536760" duration="9476000" />
+      <workItem from="1575190089616" duration="3149000" />
+      <workItem from="1575272089657" duration="6042000" />
+      <workItem from="1575365640738" duration="1133000" />
+      <workItem from="1575436909132" duration="18447000" />
+      <workItem from="1575535497437" duration="2363000" />
+      <workItem from="1575571030032" duration="946000" />
+      <workItem from="1575576405193" duration="635000" />
+      <workItem from="1575617271285" duration="1299000" />
+      <workItem from="1575705138003" duration="3686000" />
+      <workItem from="1575733158884" duration="7508000" />
+      <workItem from="1575788353484" duration="1582000" />
+      <workItem from="1575877137126" duration="13231000" />
+      <workItem from="1575965995120" duration="18970000" />
+      <workItem from="1576049860464" duration="7822000" />
+      <workItem from="1576086699630" duration="2049000" />
+      <workItem from="1576095658193" duration="5209000" />
+      <workItem from="1576145506722" duration="7301000" />
+      <workItem from="1576155638407" duration="1194000" />
+      <workItem from="1576339589110" duration="17774000" />
+      <workItem from="1576397054349" duration="4705000" />
+      <workItem from="1576438734613" duration="2849000" />
+      <workItem from="1576481779777" duration="591000" />
+      <workItem from="1576748747165" duration="923000" />
+      <workItem from="1577091682723" duration="1469000" />
+      <workItem from="1577259375100" duration="1125000" />
+      <workItem from="1577819903468" duration="4227000" />
+      <workItem from="1577862624061" duration="23661000" />
+      <workItem from="1577939405445" duration="5315000" />
+      <workItem from="1578215668813" duration="7186000" />
+      <workItem from="1578300902815" duration="9471000" />
+      <workItem from="1579233897116" duration="2085000" />
+      <workItem from="1579853898741" duration="3506000" />
+      <workItem from="1579878321617" duration="8045000" />
+      <workItem from="1579943852632" duration="1426000" />
+      <workItem from="1580022196752" duration="6333000" />
+      <workItem from="1580110060153" duration="6546000" />
+      <workItem from="1580201121156" duration="4771000" />
+      <workItem from="1580280610844" duration="12296000" />
+      <workItem from="1580367792072" duration="8202000" />
+      <workItem from="1580460501147" duration="567000" />
+      <workItem from="1580483749923" duration="6679000" />
+      <workItem from="1580545421004" duration="16452000" />
+      <workItem from="1580631782902" duration="24206000" />
+      <workItem from="1580708347637" duration="1484000" />
+      <workItem from="1580747794869" duration="10420000" />
+      <workItem from="1580800077837" duration="3554000" />
+      <workItem from="1580808610775" duration="278000" />
+      <workItem from="1580808967523" duration="16172000" />
+      <workItem from="1580901395602" duration="3755000" />
+      <workItem from="1580975490137" duration="1277000" />
+      <workItem from="1581060193488" duration="13446000" />
+      <workItem from="1581147621268" duration="3668000" />
+      <workItem from="1581182824483" duration="3033000" />
+      <workItem from="1581242735772" duration="16709000" />
+      <workItem from="1581319279380" duration="6176000" />
+      <workItem from="1581411340787" duration="1769000" />
+      <workItem from="1581413969483" duration="6045000" />
+      <workItem from="1581494253552" duration="12318000" />
+      <workItem from="1581582839554" duration="878000" />
+      <workItem from="1581604298320" duration="2680000" />
+      <workItem from="1581753345686" duration="10756000" />
+      <workItem from="1581834336984" duration="1952000" />
+      <workItem from="1581841028812" duration="30000" />
+      <workItem from="1582011929184" duration="1497000" />
+      <workItem from="1582096199218" duration="1164000" />
+      <workItem from="1582139155151" duration="4258000" />
+      <workItem from="1582229673678" duration="932000" />
+      <workItem from="1582279681434" duration="3358000" />
+      <workItem from="1582284908301" duration="151000" />
+      <workItem from="1582617647659" duration="12611000" />
+      <workItem from="1582657374380" duration="15029000" />
+      <workItem from="1582701473934" duration="5521000" />
+      <workItem from="1582751586157" duration="1850000" />
+      <workItem from="1582794312181" duration="3619000" />
+      <workItem from="1582820308240" duration="1564000" />
+      <workItem from="1582876308824" duration="2246000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1795502000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825513" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.59773374" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.41359773" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50033045" side_tool="true" weight="0.10906515" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49966952" weight="0.5750708" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="smart" type="b2602c69:ProjectViewProjectNode" />
+        <item name="smart" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app/settings/payment/method/add/add-payment-method.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/payment/status/add/add-payment-status.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/payment/status/edit/edit-payment-status.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/payment/status/payment-status-setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/payment/payment-setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/general/add/add-user.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/general/edit/edit-user.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/roles/add/add-role.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/roles/edit/edit-role.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/roles/user-roles-setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/permissions/edit/edit-permission.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/permissions/user-permissions-setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/user/user-setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/user-profile/user-profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/user-profile/user-profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2022" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/loan-application.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/loan/type/add/add-loan-type.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/loan-application.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/settings/loan/type/add/add-loan-type.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/add/add-loan-application.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="91" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/models/accounting-model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/add/add-loan-application.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="345" column="41" lean-forward="true" selection-start-line="345" selection-end-line="346" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/data/loan.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/calculator/calculator.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/amortization/loan-amortization.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/members/member.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/data/accounting.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/finance/finance.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-655" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/finance/finance.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/data/report.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/data/general-journal-data.source.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounting/statement/statement.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/loan-application.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loan-applications/calculator/calculator.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/transactions/principal/principal-transaction.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-779">
+          <caret column="92" selection-start-column="92" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/transactions/interest-transaction.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/transactions/penalty/penalty-transaction.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="147" column="76" selection-start-line="147" selection-start-column="76" selection-end-line="147" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/loans/view/payments/view-loan-payments.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="203" column="61" lean-forward="true" selection-start-line="203" selection-start-column="61" selection-end-line="203" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/config/api-version.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/payments/add/add-payment.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/withdrawals/add/add-withdrawal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/base-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

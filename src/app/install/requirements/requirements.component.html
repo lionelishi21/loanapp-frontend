@@ -1,0 +1,243 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+<div class="setup-container">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Signal Loans - Setup</h4>
+            </div>
+            <div class="card-body">
+
+                <div *ngIf="setUpError" class="alert alert-danger">
+                    {{setUpError}}
+                </div>
+
+                <ng-container *ngIf="showRequirementsForm">
+
+                    <p class="card-category justify-content-center">System Requirements</p>
+
+                    <div class="d-flex justify-content-center spinner-container" *ngIf="loader">
+                        <mat-spinner [diameter]="40"></mat-spinner>
+                    </div>
+
+                    <div class="table-responsive">
+
+                        <mat-table #table [dataSource]="requirementsDataSource">
+
+                            <ng-container matColumnDef="display_name">
+                                <mat-header-cell *matHeaderCellDef> Requirement </mat-header-cell>
+                                <mat-cell *matCellDef="let row"> {{row.display_name}} </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="status">
+                                <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+                                <mat-cell *matCellDef="let row">
+                                    <span *ngIf="row.status == true">
+                                       <i class="material-icons">done</i>
+                                    </span>
+                                    <span *ngIf="row.status == false">
+                                       <i class="material-icons">clear</i>
+                                    </span>
+                                </mat-cell>
+                            </ng-container>
+
+                            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                            <mat-row *matRowDef="let row; columns: displayedColumns;"> </mat-row>
+
+                        </mat-table>
+
+                    </div>
+
+                    <ng-container *ngIf="!loader">
+                        <ng-container *ngIf="already_installed; else setup_start">
+                            <div *ngIf="already_installed" class="alert alert-danger">
+                                Already Installed.
+                            </div>
+                        </ng-container>
+
+                        <ng-template #setup_start>
+                            <ng-container *ngIf="all_set">
+                                <button mat-raised-button type="submit" (click)="requirementsCheckComplete()" class="pull-right btn btn-success">
+                                    All set... Lets Go !!
+                                </button>
+                            </ng-container>
+
+                            <ng-container *ngIf="!all_set">
+                                <div class="alert alert-danger">
+                                    Fix Missing Requirements to Continue.
+                                </div>
+                            </ng-container>
+                        </ng-template>
+                    </ng-container>
+
+                </ng-container>
+
+                <ng-container *ngIf="showPermissionsForm">
+
+                    <p class="card-category justify-content-center">System Directory Permissions</p>
+
+                    <div class="d-flex justify-content-center spinner-container" *ngIf="loader">
+                        <mat-spinner [diameter]="40"></mat-spinner>
+                    </div>
+
+                    <div class="table-responsive">
+
+                        <mat-table #table [dataSource]="permissionsDataSource">
+
+                            <ng-container matColumnDef="display_name">
+                                <mat-header-cell *matHeaderCellDef> Requirement </mat-header-cell>
+                                <mat-cell *matCellDef="let row"> {{row.display_name}} </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="status">
+                                <mat-header-cell *matHeaderCellDef> Writable </mat-header-cell>
+                                <mat-cell *matCellDef="let row">
+                                    <span *ngIf="row.status == true">
+                                       <i class="material-icons">done</i>
+                                    </span>
+                                    <span *ngIf="row.status == false">
+                                       <i class="material-icons">clear</i>
+                                    </span>
+                                </mat-cell>
+                            </ng-container>
+
+                            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                            <mat-row *matRowDef="let row; columns: displayedColumns;"> </mat-row>
+
+                        </mat-table>
+
+                    </div>
+
+                    <ng-container *ngIf="!loader">
+                        <ng-container *ngIf="all_permission_set">
+                            <button mat-raised-button type="submit" (click)="permissionsCheckComplete()" class="pull-right btn btn-success">
+                                All set... Lets Go !!
+                            </button>
+                        </ng-container>
+                        <ng-container *ngIf="!all_permission_set">
+                            <div class="alert alert-danger">
+                                Fix Directory Permissions to Continue.
+                            </div>
+                        </ng-container>
+                    </ng-container>
+
+                </ng-container>
+
+                <ng-container *ngIf="showDatabaseForm">
+
+                    <p class="card-category justify-content-center">Database Configuration</p>
+
+                    <form [formGroup]="databaseForm">
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Host" formControlName="host">
+                            <mat-icon matSuffix class="material-icons">computer</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.host" class="form__error">{{ formErrors.host }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Port" formControlName="port">
+                            <mat-icon matSuffix class="material-icons">lock_open</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.port" class="form__error">{{ formErrors.port }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Database" formControlName="database">
+                            <mat-icon matSuffix class="material-icons">business</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.database" class="form__error">{{ formErrors.database }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Username" formControlName="username">
+                            <mat-icon matSuffix class="material-icons">perm_identity</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.username" class="form__error">{{ formErrors.username }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Password" formControlName="password">
+                            <mat-icon matSuffix class="material-icons">lock_outline</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.password" class="form__error">{{ formErrors.password }}</mat-error>
+                        </mat-form-field>
+
+                        <div class="divider divider-md"></div>
+
+                        <div *ngIf="!loader" class="additional-info">
+                            <span class="divider-h"></span>
+                            <button mat-raised-button type="submit" (click)="databaseSetup()" class="pull-right btn btn-success" [disabled]="!databaseForm.valid">
+                                Save
+                            </button>
+                        </div>
+                        <div class="additional-info d-flex justify-content-center spinner-container" *ngIf="loader">
+                           Database and seed data setup. Please wait... <mat-spinner [diameter]="40"></mat-spinner>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </form>
+                </ng-container>
+
+
+                <ng-container *ngIf="showUserForm">
+
+                    <p class="card-category justify-content-center">User Configuration</p>
+
+                    <form [formGroup]="userSetupForm">
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="First Name" formControlName="first_name">
+                            <mat-icon matSuffix class="material-icons">person</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.host" class="form__error">{{ formErrors.first_name }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Middle Name" formControlName="middle_name">
+                            <mat-icon matSuffix class="material-icons">person</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.port" class="form__error">{{ formErrors.middle_name }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Last Name" formControlName="last_name">
+                            <mat-icon matSuffix class="material-icons">person</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.database" class="form__error">{{ formErrors.last_name }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Email" formControlName="email">
+                            <mat-icon matSuffix class="material-icons">email</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.username" class="form__error">{{ formErrors.email }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="password" placeholder="Password" formControlName="password">
+                            <mat-icon matSuffix class="material-icons">lock_outline</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.password" class="form__error">{{ formErrors.password }}</mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <input matInput type="password" placeholder="Password Confirmation" formControlName="password_confirmation">
+                            <mat-icon matSuffix class="material-icons">lock_outline</mat-icon>
+                            <mat-error align="start" *ngIf="formErrors?.password" class="form__error">{{ formErrors.password_confirmation }}</mat-error>
+                        </mat-form-field>
+
+                        <div class="divider divider-md"></div>
+
+                        <div *ngIf="!loader" class="additional-info">
+                            <span class="divider-h"></span>
+                            <button mat-raised-button type="submit" (click)="userSetup()" class="pull-right btn btn-success" [disabled]="!userSetupForm.valid">
+                                Finish
+                            </button>
+                        </div>
+                        <div class="additional-info d-flex justify-content-center spinner-container" *ngIf="loader">
+                            <mat-spinner [diameter]="40"></mat-spinner>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </form>
+                </ng-container>
+                
+            </div>
+        </div>
+</div>
+            </div>
+        </div>
+
+    </div>
+</div>

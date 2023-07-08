@@ -1,0 +1,62 @@
+<div class="logo">
+
+    <figure class="item simple-text top-space">
+        <figcaption class="caption"> {{(currentSettings$|async)?.business_name}}</figcaption>
+        <div class="card-avatar active-user">
+        </div>
+    </figure>
+</div>
+
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <ng-container *ngFor="let menuItem of menuItems1">
+            <li routerLinkActive="active" *appHasPermission = menuItem.permission class="{{menuItem.class}} nav-item">
+                <a class="nav-link" [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </li>
+        </ng-container>
+        <mat-divider></mat-divider>
+
+        <ng-container *ngFor="let menuItem of menuItems2">
+            <li routerLinkActive="active" *appHasPermission = menuItem.permission class="{{menuItem.class}} nav-item">
+                <a class="nav-link" [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </li>
+        </ng-container>
+
+        <mat-divider></mat-divider>
+
+        <ng-container *ngFor="let menuItem of menuItems3">
+            <li routerLinkActive="active" *appHasPermission = menuItem.permission class="{{menuItem.class}} nav-item">
+                <a class="nav-link" [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </li>
+        </ng-container>
+
+        <mat-divider></mat-divider>
+
+        <ng-container *ngFor="let menuItem of menuItems4">
+            <li routerLinkActive="active" *appHasPermission = menuItem.permission class="{{menuItem.class}} nav-item">
+                <a class="nav-link" [routerLink]="[menuItem.path]">
+                    <i class="material-icons">{{menuItem.icon}}</i>
+                    <p>{{menuItem.title}}</p>
+                </a>
+            </li>
+        </ng-container>
+
+        <mat-divider></mat-divider>
+        <li routerLinkActive="active" class="nav-item pointer" (click)="logout()">
+            <a class="nav-link">
+                <i class="material-icons">power_settings_new</i>
+                <p *ngIf="!loading">Logout</p>
+                <p *ngIf="loading">clean up ...</p>
+            </a>
+        </li>
+    </ul>
+</div>

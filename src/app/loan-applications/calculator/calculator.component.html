@@ -1,0 +1,135 @@
+<div class="d-flex justify-content-center spinner-container" *ngIf="loader">
+    Loan calculation ...
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<ng-container *ngIf="!loader">
+    <h5 mat-dialog-title>Loan Calculator</h5>
+</ng-container>
+
+<mat-dialog-content *ngIf="!loader" class="mat-dialog-data" [formGroup]="form">
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput type="number" min="0" formControlName="amount" placeholder="Amount*">
+                <mat-error align="start" *ngIf="formErrors?.amount" class="form__error">{{ formErrors.amount }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Loan Type*" formControlName="loan_type_id" #loanTypeSelect (selectionChange)="onLoanTypeItemChange(loanTypeSelect.value)">
+                    <mat-option *ngFor="let loanType of loanTypes" [value]="loanType.id">
+                        {{loanType.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.loan_type_id" class="form__error">{{ formErrors.loan_type_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field  class="full-width">
+                <input matInput [matDatepicker]="start_date" formControlName="start_date" placeholder="Start Date">
+                <mat-datepicker-toggle matSuffix [for]="start_date"></mat-datepicker-toggle>
+                <mat-datepicker #start_date></mat-datepicker>
+                <mat-error align="start" *ngIf="formErrors?.start_date" class="form__error">{{ formErrors.start_date }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="service_fee" placeholder="Service Fee">
+                <mat-error align="start" *ngIf="formErrors?.service_fee" class="form__error">{{ formErrors.service_fee }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="interest_type" placeholder="Interest Type">
+                <mat-error align="start" *ngIf="formErrors?.interest_type" class="form__error">{{ formErrors.interest_type }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="repayment_period" placeholder="Repayment Period">
+                <mat-error align="start" *ngIf="formErrors?.repayment_period" class="form__error">{{ formErrors.repayment_period }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="interest_rate" placeholder="Interest Rate">
+                <mat-error align="start" *ngIf="formErrors?.interest_rate" class="form__error">{{ formErrors.interest_rate }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="payment_frequency" placeholder="Payment Frequency">
+                <mat-error align="start" *ngIf="formErrors?.payment_frequency" class="form__error">{{ formErrors.payment_frequency }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+
+
+    <div *ngIf="showResult" class="table-responsive">
+        <mat-table #table [dataSource]="dataSource">
+
+            <!-- Count Column -->
+            <ng-container matColumnDef="count">
+                <mat-header-cell *matHeaderCellDef> Period </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.count}} </mat-cell>
+            </ng-container>
+
+            <!-- Due Date Column -->
+            <ng-container matColumnDef="due_date">
+                <mat-header-cell *matHeaderCellDef> Due Date </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.due_date}} </mat-cell>
+            </ng-container>
+
+            <!-- Payment Column -->
+            <ng-container matColumnDef="payment">
+                <mat-header-cell *matHeaderCellDef> Payment </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.payment}} </mat-cell>
+            </ng-container>
+
+            <!-- Interest Column -->
+            <ng-container matColumnDef="interest">
+                <mat-header-cell *matHeaderCellDef> Interest </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.interest}} </mat-cell>
+            </ng-container>
+
+            <!-- Principal Column -->
+            <ng-container matColumnDef="principal">
+                <mat-header-cell *matHeaderCellDef> Principal </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.principal}} </mat-cell>
+            </ng-container>
+
+            <!-- Balance Column -->
+            <ng-container matColumnDef="balance">
+                <mat-header-cell *matHeaderCellDef> Balance </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.balance}} </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="tableColumns; sticky: true"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: tableColumns;"> </mat-row>
+
+        </mat-table>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+    <ng-container *ngIf="!loader" align="right">
+        <button class="mat-raised-button mat-primary" (click)="calculatorResults(false)" [disabled]="!form.valid">Calculate</button>
+    </ng-container>
+    <ng-container *ngIf="!loader" align="right">
+        <button *ngIf="dataSource?.length > 0" mat-raised-button matTooltip="Download Calculator Result." [matTooltipPosition]="'above'" (click)="calculatorResults(true)">
+            <mat-icon>picture_as_pdf</mat-icon>
+            Download
+        </button>
+    </ng-container>
+</mat-dialog-actions>

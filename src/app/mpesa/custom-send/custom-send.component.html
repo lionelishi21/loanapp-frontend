@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup] = "form" (ngSubmit)="send()">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <mat-form-field class="full-width">
+                                <span matPrefix>254</span>
+                                <input matInput type="number" min="0" formControlName="phone" placeholder="Phone">
+                                <mat-hint align="start"><strong>e.g: 7xxxxxxxxx</strong> </mat-hint>
+                                <mat-error align="start" *ngIf="formErrors?.phone" class="form__error">{{ formErrors.phone }}</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3">
+                            <mat-form-field class="full-width">
+                                <span matPrefix>KES</span>
+                                <input matInput type="number" min="0" formControlName="amount" placeholder="Amount">
+                                <mat-hint align="start"><strong></strong> </mat-hint>
+                                <mat-error align="start" *ngIf="formErrors?.amount" class="form__error">{{ formErrors.amount }}</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3">
+                            <mat-form-field class="full-width">
+                                <input matInput formControlName="description" placeholder="Description">
+                                <mat-error align="start" *ngIf="formErrors?.description" class="form__error">{{ formErrors.description }}</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-3">
+                            <mat-dialog-actions align="center">
+                                <button class="mat-raised-button mat-primary" (click)="send()" [disabled]="!form.valid">Send</button>
+                            </mat-dialog-actions>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

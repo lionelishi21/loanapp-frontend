@@ -1,0 +1,142 @@
+<h5 mat-dialog-title>Withdrawal</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="create()">
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field>
+                <mat-select placeholder="Member*" formControlName="member_id" #memberSelect (selectionChange)="onMemberItemChange(memberSelect.value)">
+                    <!-- place ngx-mat-select-search inside mat-option to allow opening without initial selection -->
+                    <mat-option>
+                        <ngx-mat-select-search [formControl]="memberServerSideFilteringCtrl" [searching]="searching"
+                                               placeholderLabel="Find Member..."
+                                               noEntriesFoundLabel="No matching member found ...">
+                        </ngx-mat-select-search>
+                    </mat-option>
+                    <mat-option *ngFor="let member of filteredServerSideMembers | async" [value]="member.id">
+                        {{member.first_name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.member_id" class="form__error">{{ formErrors.member_id }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="id_number" placeholder="Id Number">
+                <mat-error align="start" *ngIf="formErrors?.id_number" class="form__error">{{ formErrors.id_number }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="account_number" placeholder="Account Number">
+                <mat-error align="start" *ngIf="formErrors?.account_number" class="form__error">{{ formErrors.account_number }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <mat-form-field  class="full-width">
+                <input matInput [matDatepicker]="picker" formControlName="withdrawal_date" placeholder="Withdrawal Date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error align="start" *ngIf="formErrors?.payment_date" class="form__error">{{ formErrors.payment_date }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width">
+                <input matInput type="number" min="0" formControlName="amount" placeholder="Amount">
+                <mat-error align="start" *ngIf="formErrors?.amount" class="form__error">{{ formErrors.amount }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Disburse Method" formControlName="method_id" #paymentMethodSelect (selectionChange)="onPaymentMethodItemChange(paymentMethodSelect.value)">
+                    <mat-option *ngFor="let paymentMethod of paymentMethods" [value]="paymentMethod.id">
+                        {{paymentMethod.display_name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.disburse_method_id" class="form__error">{{ formErrors.disburse_method_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+
+    <div *ngIf="isMpesa">
+        <div formGroupName="mpesa_fields">
+            <div class="row">
+                <div class="col-4">
+                    <mat-form-field class="full-width">
+                        <span matPrefix>254</span>
+                        <input matInput type="number" min="0" formControlName="mpesa_number" placeholder="Mpesa Number">
+                        <mat-hint align="start"><strong>e.g: 7xxxxxxxxx</strong> </mat-hint>
+                        <mat-error align="start" *ngIf="formErrors?.mpesa_fields.mpesa_number" class="form__error">{{ formErrors.mpesa_fields.mpesa_number }}</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field class="full-width">
+                        <input matInput formControlName="first_name" placeholder="Mpesa First Name">
+                        <mat-error align="start" *ngIf="formErrors?.first_name" class="form__error">{{ formErrors.first_name }}</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <mat-form-field class="full-width">
+                        <input matInput formControlName="last_name" placeholder="Mpesa Last Name">
+                        <mat-error align="start" *ngIf="formErrors?.last_name" class="form__error">{{ formErrors.last_name }}</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="isBank">
+        <div formGroupName="bank_fields">
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field class="full-width">
+                        <input matInput formControlName="cheque_number" placeholder="Cheque Number">
+                        <mat-error align="start" *ngIf="formErrors?.cheque_number" class="form__error">{{ formErrors.cheque_number }}</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-6">
+                    <mat-form-field  class="full-width">
+                        <input matInput [matDatepicker]="cheque_date" formControlName="cheque_date" placeholder="Cheque Date">
+                        <mat-datepicker-toggle matSuffix [for]="cheque_date"></mat-datepicker-toggle>
+                        <mat-datepicker #cheque_date></mat-datepicker>
+                        <mat-error align="start" *ngIf="formErrors?.cheque_date" class="form__error">{{ formErrors.cheque_date }}</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field class="full-width">
+                        <input matInput formControlName="bank_name" placeholder="Bank Name">
+                        <mat-error align="start" *ngIf="formErrors?.bank_name" class="form__error">{{ formErrors.bank_name }}</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="full-width">
+                        <input matInput formControlName="bank_branch" placeholder="Bank Branch">
+                        <mat-error align="start" *ngIf="formErrors?.bank_branch" class="form__error">{{ formErrors.bank_branch }}</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <mat-form-field class="full-width"  color="accent">
+        <textarea  formControlName="notes" matInput #notes placeholder="Extra Notes" maxlength="150" rows="3"></textarea>
+        <mat-hint align="end">{{notes.value.length}} / 150</mat-hint>
+        <mat-error align="start" *ngIf="formErrors?.notes" class="form__error">{{ formErrors.notes }}</mat-error>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center" *ngIf="!loader">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="create()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>

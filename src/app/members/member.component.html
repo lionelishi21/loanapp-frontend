@@ -1,0 +1,114 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Members</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row search-form-section">
+
+                            <div class="col-5">
+                                <button mat-button matPrefix mat-stroked-button aria-label="add new" (click)="addDialog()">
+                                    <mat-icon>add</mat-icon>Add New
+                                </button>
+                            </div>
+
+                            <div class="col-7">
+                                <mat-form-field class="search-form-field">
+                                    <input matInput #search placeholder="Filter" autocomplete="off" [disabled]="meta?.total===0">
+                                    <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="search.value" (click)="clearSearch()">
+                                        <mat-icon>close</mat-icon></button>
+                                </mat-form-field>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive">
+
+                            <mat-table #table [dataSource]="dataSource" matSort matSortActive="created_at" matSortDirection="desc" matSortDisableClear>
+
+                                <ng-container matColumnDef="created_at">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header> Account Number </mat-header-cell>
+                                    <mat-cell *matCellDef="let row">
+                                        <button mat-stroked-button color="primary"
+                                                (click)="getAccountBalance(row)" type="button" matTooltip="View Deposit Account Statement" [matTooltipPosition]="'above'" class="">
+                                            {{row.account?.account_number}}
+                                        </button>
+                                    </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="branch">
+                                    <mat-header-cell *matHeaderCellDef> Branch </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{ row.branch?.name}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="first_name">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header> First Name </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.first_name}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="id_number">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header> Id Number </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.id_number}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="phone">
+                                    <mat-header-cell *matHeaderCellDef mat-sort-header> Phone </mat-header-cell>
+                                    <mat-cell *matCellDef="let row"> {{row.phone}} </mat-cell>
+                                </ng-container>
+
+                                <ng-container matColumnDef="actions">
+                                    <mat-header-cell *matHeaderCellDef> Actions  </mat-header-cell>
+
+                                    <mat-cell *matCellDef="let row" class="button-row">
+                                        <span *ngIf="loader">-</span>
+
+                                        <ng-container *ngIf="!loader">
+                                            <button mat-raised-button routerLink="{{row.id}}"
+                                                    (click)="onSelected(row)" type="button" matTooltip="View Member Details" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon">
+                                                <mat-icon color="primary">visibility</mat-icon>
+                                            </button>
+                                            <button mat-icon-button [matMenuTriggerFor]="menu">
+                                                <mat-icon>more_vert</mat-icon>
+                                            </button>
+                                            <mat-menu #menu="matMenu">
+                                                <button mat-menu-item matTooltip="Edit Member." [matTooltipPosition]="'above'"  (click)="editDialog(row)">
+                                                    <mat-icon color="primary">edit</mat-icon>
+                                                    <span>Edit</span>
+                                                </button>
+                                                <button mat-menu-item matTooltip="Download Deposit Account Statement." [matTooltipPosition]="'above'" (click)="downloadStatement(row)">
+                                                    <mat-icon color="primary">picture_as_pdf</mat-icon>
+                                                    <span>Statement</span>
+                                                </button>
+                                            </mat-menu>
+                                        </ng-container>
+                                    </mat-cell>
+                                </ng-container>
+
+                                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                                <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onSelected(row)"> </mat-row>
+
+
+                            </mat-table>
+                            <span *ngIf="meta?.total===0">No Data</span>
+
+                            <div class="d-flex justify-content-center spinner-container" *ngIf="(dataSource?.loading$ | async) || loader">
+                                <mat-spinner [diameter]="40"></mat-spinner>
+                            </div>
+
+                            <mat-paginator #pagination
+                                           [length]="meta?.total"
+                                           [pageIndex]="pageIndex"
+                                           [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>
+                            </mat-paginator>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

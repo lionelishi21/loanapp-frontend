@@ -1,0 +1,47 @@
+.card-profile .card-avatar {
+    max-width: 100px;
+    max-height: 100px;
+}
+.logo {
+    padding: 15px 0 0;
+}
+.sidebar-wrapper {
+    height: calc(100vh - 150px);
+}
+
+figure.item.simple-text {
+    white-space: pre-wrap;
+}
+
+.nav {
+    margin-top: 0;
+    display: block;
+}
+
+figure.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    /*width: 200px;*/
+}
+img {
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 3px solid #4caf50;
+}
+.active-user {
+    text-transform: none;
+    font-size: 13px;
+}
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+.top-space{
+    padding: 5px 5px;
+}

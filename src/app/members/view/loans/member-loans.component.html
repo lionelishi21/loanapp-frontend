@@ -1,0 +1,61 @@
+<div class="row search-form-section">
+    <div class="col-12">
+        <mat-form-field class="search-form-field">
+            <input matInput #search placeholder="Search" autocomplete="off" [disabled]="meta?.total===0">
+            <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="search.value" (click)="clearSearch()">
+                <mat-icon>close</mat-icon></button>
+        </mat-form-field>
+    </div>
+</div>
+
+<div class="table-responsive">
+
+    <mat-table #table [dataSource]="loanDataSource" matSort matSortActive="updated_at" matSortDirection="desc" matSortDisableClear>
+
+        <ng-container matColumnDef="loan_reference_number">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Ref Number </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.loan_reference_number}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="loan_type_id">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Loan Type </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.loanType?.name}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="repayment_period">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Period </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.repayment_period}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="amount_approved">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Amount </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.amount_approved|number:'1.2'}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="balance">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Balance </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.balance}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="next_repayment_date">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Next Cycle Due </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.next_repayment_date}} </mat-cell>
+        </ng-container>
+
+
+        <mat-header-row *matHeaderRowDef="loanColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: loanColumns;"> </mat-row>
+    </mat-table>
+    <span *ngIf="meta?.total===0">No Loan Data.</span>
+
+    <div class="d-flex justify-content-center spinner-container" *ngIf="(loanDataSource?.loading$ | async) || loader">
+        <mat-spinner [diameter]="40"></mat-spinner>
+    </div>
+
+    <mat-paginator #pagination
+                   [length]="meta?.total"
+                   [pageIndex]="pageIndex"
+                   [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>
+    </mat-paginator>
+
+</div>

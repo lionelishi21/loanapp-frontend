@@ -1,0 +1,97 @@
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Ref. Number" disabled value="{{(loanData$|async)?.loan_reference_number}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Loan Amount" disabled value="{{(loanData$|async)?.amount_approved|number:'1.2'}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Paid Amount" disabled value="{{(loanData$|async)?.paid_amount}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Balance Amount" disabled value="{{(loanData$|async)?.balance}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Loan Type" disabled value="{{(loanData$|async)?.loanType?.name}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Payment Frequency" disabled value="{{(loanData$|async)?.paymentFrequency?.display_name}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Repayment Period" disabled value="{{(loanData$|async)?.repayment_period}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Interest Rate" disabled value="{{(loanData$|async)?.interest_rate}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Service Fee" disabled value="{{(loanData$|async)?.service_fee}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Start Date" disabled value="{{(loanData$|async)?.start_date}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="First Name" disabled value="{{(loanData$|async)?.member?.first_name}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Middle Name" disabled value="{{(loanData$|async)?.member?.middle_name}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Last Name" disabled value="{{(loanData$|async)?.member?.last_name}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Phone" disabled value="{{(loanData$|async)?.member?.phone}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

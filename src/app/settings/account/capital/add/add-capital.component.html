@@ -1,0 +1,64 @@
+<h5 mat-dialog-title>Add Lending Capital</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="createType()">
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Branch" formControlName="branch_id">
+                    <mat-option *ngFor="let branch of branches" [value]="branch.id">
+                        {{branch.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.branch_id" class="form__error">{{ formErrors.branch_id }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field  class="full-width">
+                <input matInput [matDatepicker]="picker" formControlName="capital_date" placeholder="Capital Date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error align="start" *ngIf="formErrors?.capital_date" class="form__error">{{ formErrors.capital_date }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Account" formControlName="method_id">
+                    <mat-option *ngFor="let method of paymentMethods" [value]="method.id">
+                        {{method.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.branch_id" class="form__error">{{ formErrors.branch_id }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="amount" placeholder="Amount">
+                <mat-error align="start" *ngIf="formErrors?.amount" class="form__error">{{ formErrors.amount }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <mat-form-field class="full-width"  color="accent">
+                <textarea  formControlName="description" matInput #description placeholder="Description" maxlength="150" rows="5"></textarea>
+                <mat-hint align="end">{{description.value.length}} / 150</mat-hint>
+                <mat-error align="start" *ngIf="formErrors?.description" class="form__error">{{ formErrors.description }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center" *ngIf="!loader">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="createType()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>

@@ -1,0 +1,52 @@
+<h5 mat-dialog-title>Edit Guarantor</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="updateMethod()">
+
+
+    <div class="row">
+        <div class="col-12">
+            <mat-form-field class="full-width" color="primary">
+                <mat-select placeholder="Member ID" formControlName="member_id" #memberSelect (selectionChange)="onItemChange(memberSelect.value)">
+                    <mat-option *ngFor="let member of members" [value]="member.id">
+                        {{member.first_name}}
+                    </mat-option>
+                </mat-select>
+                <mat-error align="start" *ngIf="formErrors?.member_id" class="form__error">{{ formErrors.member_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="id_number" placeholder="Id Number">
+                <mat-error align="start" *ngIf="formErrors?.id_number" class="form__error">{{ formErrors.id_number }}</mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="account_id" placeholder="Account Number">
+                <mat-error align="start" *ngIf="formErrors?.account_id" class="form__error">{{ formErrors.account_id }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+
+    <mat-form-field class="full-width"  color="accent">
+        <textarea  formControlName="notes" matInput #notes placeholder="Notes" maxlength="150" rows="5"></textarea>
+        <mat-hint align="end">{{notes.value.length}} / 150</mat-hint>
+        <mat-error align="start" *ngIf="formErrors?.description" class="form__error">{{ formErrors.description }}</mat-error>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="updateMethod()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>
+

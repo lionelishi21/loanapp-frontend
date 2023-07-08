@@ -1,0 +1,73 @@
+<h5 mat-dialog-title>Principal Transactions. # {{principal?.loan?.loan_reference_number}}</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data">
+
+    <div class="row">
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Amount" disabled value="{{principal?.amount|number:'1.2'}}">
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Paid" disabled value="{{principal?.paid_amount}}">
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Balance" disabled value="{{principal?.balance}}">
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-form-field>
+                <input matInput placeholder="Due Date" disabled value="{{principal?.due_date}}">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+
+        <mat-table #table [dataSource]="transactionDataSource" matSort matSortActive="transaction_date" matSortDirection="desc" matSortDisableClear>
+
+            <ng-container matColumnDef="transaction_date">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Date </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.transaction_date}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="amount">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Amount </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.amount|number:'1.2'}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="loan_id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Loan #. </mat-header-cell>
+                <mat-cell *matCellDef="let row"> {{row.loan?.loan_reference_number}} </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="transactionColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: transactionColumns;"> </mat-row>
+
+        </mat-table>
+        <span *ngIf="meta?.total===0">No transaction data.</span>
+
+        <div class="d-flex justify-content-center spinner-container" *ngIf="(transactionDataSource?.loading$ | async) || loader">
+            <mat-spinner [diameter]="40"></mat-spinner>
+        </div>
+
+        <mat-paginator #pagination
+                       [length]="meta?.total"
+                       [pageIndex]="pageIndex"
+                       [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>
+        </mat-paginator>
+
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true">Close</button>
+</mat-dialog-actions>

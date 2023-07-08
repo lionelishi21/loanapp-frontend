@@ -1,0 +1,105 @@
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="row">
+                <div class="col-6">
+                    <mat-form-field>
+                        <input matInput placeholder="First Name" disabled value="{{(memberData$|async)?.first_name}}">
+                    </mat-form-field>
+                </div>
+                <div class="col-6">
+                    <mat-form-field>
+                        <input matInput placeholder="Middle Name" disabled value="{{(memberData$|async)?.middle_name}}">
+                    </mat-form-field>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Last Name" disabled value="{{(memberData$|async)?.last_name}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Date Became Member" disabled value="{{(memberData$|async)?.date_became_member_display}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Phone" disabled value="{{(memberData$|async)?.phone}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Email" disabled value="{{(memberData$|async)?.email}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Date of Birth" disabled value="{{(memberData$|async)?.date_of_birth_display}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Nationality" disabled value="{{(memberData$|async)?.nationality}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="County" disabled value="{{(memberData$|async)?.county}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="City" disabled value="{{(memberData$|async)?.city}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="National ID / Passport Number" disabled value="{{(memberData$|async)?.id_number}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Residential Address" disabled value="{{(memberData$|async)?.residential_address}}">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <mat-form-field>
+                            <input matInput placeholder="Postal Address" disabled value="{{(memberData$|async)?.postal_address}}">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-6" *ngIf="memberShipForm">
+                            <div class="d-flex spinner-container" *ngIf="loader">
+                                <mat-spinner [diameter]="40"></mat-spinner>
+                            </div>
+
+                            <button mat-raised-button *ngIf="!loader" (click)="downloadForm()">
+                                <i class="material-icons">
+                                    cloud_download
+                                </i> Membership Form
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

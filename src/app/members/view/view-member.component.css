@@ -1,0 +1,7 @@
+.card-profile .card-avatar {
+    margin: -80px auto 0;
+}
+.mat-tab-nav-bar {
+    white-space: nowrap;
+    overflow: auto;
+}

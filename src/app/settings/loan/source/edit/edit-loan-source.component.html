@@ -1,0 +1,26 @@
+<h5 mat-dialog-title>Edit Source</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="updateSource()">
+
+    <mat-form-field class="full-width">
+        <input matInput formControlName="name" placeholder="Source Name">
+        <mat-error align="start" *ngIf="formErrors?.name" class="form__error">{{ formErrors.name }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width"  color="accent">
+        <textarea  formControlName="description" matInput #description placeholder="Description" maxlength="150" rows="5"></textarea>
+        <mat-hint align="end">{{description.value.length}} / 150</mat-hint>
+        <mat-error align="start" *ngIf="formErrors?.description" class="form__error">{{ formErrors.description }}</mat-error>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center" *ngIf="!loader">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true" (click)="close()">Close</button>
+
+    <button class="mat-raised-button mat-primary" (click)="updateSource()" [disabled]="!form.valid">Save</button>
+</mat-dialog-actions>

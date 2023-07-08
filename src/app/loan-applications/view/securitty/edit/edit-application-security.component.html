@@ -1,0 +1,97 @@
+<h5 mat-dialog-title>Edit Collateral</h5>
+
+<div class="d-flex spinner-container" *ngIf="loader">
+    <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+
+<mat-dialog-content class="mat-dialog-data" [formGroup]="form"  (ngSubmit)="updateMethod()">
+
+    <div class="row">
+        <div class="col-12">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="title" placeholder="Collateral Title">
+                <mat-error align="start" *ngIf="formErrors?.title" class="form__error">{{ formErrors.title }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <mat-form-field class="full-width"  color="accent">
+        <textarea  formControlName="description" matInput #description placeholder="Description" maxlength="150" rows="2"></textarea>
+        <mat-hint align="end">{{description.value.length}} / 150</mat-hint>
+        <mat-error align="start" *ngIf="formErrors?.description" class="form__error">{{ formErrors.description }}</mat-error>
+    </mat-form-field>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="valuation_amount" placeholder="Valuation Amount">
+                <mat-error align="start" *ngIf="formErrors?.valuation_amount" class="form__error">{{ formErrors.valuation_amount }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field  class="full-width">
+                <input matInput [matDatepicker]="valuation_date" formControlName="valuation_date" placeholder="Valuation Date">
+                <mat-datepicker-toggle matSuffix [for]="valuation_date"></mat-datepicker-toggle>
+                <mat-datepicker #valuation_date></mat-datepicker>
+                <mat-error align="start" *ngIf="formErrors?.valuation_date" class="form__error">{{ formErrors.valuation_date }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="valued_by" placeholder="Valued By">
+                <mat-error align="start" *ngIf="formErrors?.valued_by" class="form__error">{{ formErrors.valued_by }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="valuer_phone" placeholder="Valuer Phone">
+                <mat-error align="start" *ngIf="formErrors?.valuer_phone" class="form__error">{{ formErrors.valuer_phone }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="location" placeholder="Location">
+                <mat-error align="start" *ngIf="formErrors?.location" class="form__error">{{ formErrors.location }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="condition" placeholder="Condition">
+                <mat-error align="start" *ngIf="formErrors?.condition" class="form__error">{{ formErrors.condition }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="registration_number" placeholder="Registration Number">
+                <mat-error align="start" *ngIf="formErrors?.registration_number" class="form__error">{{ formErrors.registration_number }}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="full-width">
+                <input matInput formControlName="registered_to" placeholder="Registered To">
+                <mat-error align="start" *ngIf="formErrors?.registered_to" class="form__error">{{ formErrors.registered_to }}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <mat-form-field class="full-width"  color="accent">
+        <textarea  formControlName="notes" matInput #notes placeholder="Notes" maxlength="150" rows="2"></textarea>
+        <mat-hint align="end">{{notes.value.length}} / 150</mat-hint>
+        <mat-error align="start" *ngIf="formErrors?.notes" class="form__error">{{ formErrors.notes }}</mat-error>
+    </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-button class="mat-raised-button" [mat-dialog-close]="true">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="updateMethod()">Update</button>
+</mat-dialog-actions>
+

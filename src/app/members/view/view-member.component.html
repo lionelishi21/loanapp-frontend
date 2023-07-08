@@ -1,0 +1,54 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header card-header-danger">
+                            <h4 class="card-title">Member Profile</h4>
+                            <p class="card-category"></p>
+                        </div>
+                        <div class="card-body">
+
+                            <nav mat-tab-nav-bar>
+
+                                <a mat-tab-link routerLinkActive #general="routerLinkActive" [active]="general.isActive" [routerLinkActiveOptions]="{exact: true}"
+                                   routerLink="/members/{{id}}">
+                                    <span class="nav-text">  Info </span></a>
+
+                                <a mat-tab-link routerLinkActive #loan_application="routerLinkActive" [active]="loan_application.isActive" [routerLink]="['loan_applications']">
+                                    <span class="nav-text">   Loan Applications </span></a>
+
+                                <a mat-tab-link routerLinkActive #collateral="routerLinkActive" [active]="collateral.isActive" [routerLink]="['collateral']">
+                                    <span class="nav-text">  Collateral </span></a>
+
+                                <a mat-tab-link routerLinkActive #guarantee="routerLinkActive" [active]="guarantee.isActive" [routerLink]="['guarantee']">
+                                    <span class="nav-text">   Guarantee </span></a>
+                            </nav>
+
+                            <router-outlet></router-outlet>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card card-profile">
+                        <div class="card-profile">
+                            <div class="card-avatar" *ngIf="imageToShow">
+                                <img [src]="imageToShow" alt="Profile Picture">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-category text-gray">{{memberData?.first_name}} {{memberData?.middle_name}} {{memberData?.last_name}}</h6>
+                            <h4 class="card-title"> A/C #. {{memberData?.account?.account_number}}</h4>
+                            <div class="card-description">
+                                <div>Phone: {{memberData?.phone}}</div>
+                                <div>Email: {{memberData?.email}}</div>
+                                Branch: {{memberData?.branch?.name}}
+                            </div>
+                            Joined: {{memberData?.date_became_member_display}}
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

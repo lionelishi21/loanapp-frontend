@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+
+            <div class="card-body">
+
+                <form [formGroup]="form">
+                    <div class="row">
+                        <div class="col-5">
+                            <mat-form-field class="search-form-field" color="primary">
+                                <mat-select placeholder="Branch" formControlName="branch_id" #branchSelect (selectionChange)="onBranchChange(branchSelect.value)">
+                                    <mat-option *ngFor="let branch of branches" [value]="branch.id">
+                                        {{branch.name}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </form>
+                <div class="row search-form-section">
+                    <div class="col-11">
+                        <mat-form-field class="search-form-field">
+                            <input matInput #search placeholder="Filter" autocomplete="off" [disabled]="meta?.total===0">
+                            <button mat-button matSuffix mat-icon-button aria-label="Clear" *ngIf="search.value" (click)="clearSearch()">
+                                <mat-icon>close</mat-icon></button>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+
+                    <mat-table #table [dataSource]="dataSourceTransactions" matSort matSortActive="created_at" matSortDirection="desc" matSortDisableClear>
+
+                        <ng-container matColumnDef="transaction_amount">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header> Amount </mat-header-cell>
+                            <mat-cell *matCellDef="let row"> {{row.branch?.transaction_amount}} </mat-cell>
+                        </ng-container>
+
+                        <ng-container matColumnDef="transaction_receipt">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header> Receipt </mat-header-cell>
+                            <mat-cell *matCellDef="let row"> {{row.transaction_receipt}} </mat-cell>
+                        </ng-container>
+
+                        <ng-container matColumnDef="b2C_recipientIs_registered_customer">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header> Recipient Registered </mat-header-cell>
+                            <mat-cell *matCellDef="let row"> {{row.b2C_recipientIs_registered_customer}} </mat-cell>
+                        </ng-container>
+
+                        <ng-container matColumnDef="b2C_charges_paid_account_available_funds">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header> Charges Paid </mat-header-cell>
+                            <mat-cell *matCellDef="let row"> {{row.b2C_charges_paid_account_available_funds}} </mat-cell>
+                        </ng-container>
+
+                        <ng-container matColumnDef="receiver_party_public_name">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header> Receiver Name </mat-header-cell>
+                            <mat-cell *matCellDef="let row"> {{row.receiver_party_public_name}} </mat-cell>
+                        </ng-container>
+
+                        <ng-container matColumnDef="transaction_completed_date_time">
+                            <mat-header-cell *matHeaderCellDef mat-sort-header> Completed Date </mat-header-cell>
+                            <mat-cell *matCellDef="let row"> {{row.transaction_completed_date_time}} </mat-cell>
+                        </ng-container>
+
+                        <mat-header-row *matHeaderRowDef="displayColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayColumns;"> </mat-row>
+
+                    </mat-table>
+                    <span *ngIf="meta?.total===0">No Data</span>
+
+                    <div class="d-flex justify-content-center spinner-container" *ngIf="(dataSourceTransactions?.loading$ | async) || loader">
+                        <mat-spinner [diameter]="40"></mat-spinner>
+                    </div>
+
+                    <mat-paginator #pagination
+                                   [length]="meta?.total"
+                                   [pageIndex]="pageIndex"
+                                   [pageSizeOptions]="pageSizeOptions" showFirstLastButtons>
+                    </mat-paginator>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
